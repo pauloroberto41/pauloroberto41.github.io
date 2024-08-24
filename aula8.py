@@ -24,7 +24,7 @@ informaçoes_de_filmes = ['Inception', 2010, True, 2.28]
 quantidades = [ 10, 30, 50, 20, 6.99 ]
 # print(sum(quantidades))
 
-nomes = [ 'Ana', 'Luíza', 'x', 'Nadir', 'Carlos']
+nomes = [ 'Ana', 'Luíza', 'x', 'Nadir', 'Carlos' ]
 
 
 # print(max(nomes))

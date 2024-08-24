@@ -95,7 +95,7 @@ print(números_copiados)
 """
     Quando alteramos o valor de números_copiados[0] = 6, estamos, na verdade, modificando a lista original números. Isso acontece porque números_copiados não é uma nova lista, mas sim um "apelido" para a lista números. Em termos mais técnicos, ambos os nomes (números e números_copiados) estão apontando para o mesmo endereço na memória.
 
-    Para vis0,ualizar melhor, vamos usar um exemplo de C++. No C++, temos o conceito de ponteiros, que são endereços de memória onde os dados são armazenados. Imagine que dentro da variável números[0], temos um endereço de memória, algo como 0x454x54x54. Ao criar um "apelido" de números para números_copiados, estamos apenas mudando o nome, mas o endereço de memória continua o mesmo, 0x454x54x54.
+    Para visualizar melhor, vamos usar um exemplo de C++. No C++, temos o conceito de ponteiros, que são endereços de memória onde os dados são armazenados. Imagine que dentro da variável números[0], temos um endereço de memória, algo como 0x454x54x54. Ao criar um "apelido" de números para números_copiados, estamos apenas mudando o nome, mas o endereço de memória continua o mesmo, 0x454x54x54.
 
     Então, quando você altera o valor de números_copiados[0], você está modificando o valor que está armazenado nesse endereço de memória. Como números e números_copiados apontam para o mesmo local, qualquer mudança feita em um será refletida no outro.
 

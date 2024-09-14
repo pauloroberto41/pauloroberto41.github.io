@@ -1,7 +1,7 @@
 # Listas
 
 
-informaçoes_de_filmes = ['Inception', 2010, True, 2.28]
+# informaçoes_de_filmes = ['Inception', 2010, True, 2.28]
 
 #indexação
 # print(nomes[1])
@@ -21,10 +21,10 @@ informaçoes_de_filmes = ['Inception', 2010, True, 2.28]
 
 
 
-quantidades = [ 10, 30, 50, 20, 6.99 ]
+# quantidades = [ 10, 30, 50, 20, 6.99 ]
 # print(sum(quantidades))
 
-nomes = [ 'Ana', 'Luíza', 'x', 'Nadir', 'Carlos' ]
+# nomes = [ 'Ana', 'Luíza', 'x', 'Nadir', 'Carlos' ]
 
 
 # print(max(nomes))
@@ -47,7 +47,7 @@ nomes = [ 'Ana', 'Luíza', 'x', 'Nadir', 'Carlos' ]
 
 #string são imutáveis
 
-palavra = 'gato'
+# palavra = 'gato'
 # palavra[2] = 'l'
 
 #print(palavra[:2] )
@@ -95,64 +95,87 @@ palavra = 'gato'
 # print(hora)
 
 #Operador * descompactador de tuplas, util para comprimento desconhecido. 
-pontuação = ('A',"B",68,39,47,80)
+# pontuação = ('A',"B",68,39,47,80)
 
-ganhador, *restante = pontuação
-print(ganhador)
-print(restante)
+# ganhador, *restante = pontuação
+# print(ganhador)
+# print(restante)
 
-"""
+
 
 #Conjuntos que diferentes de listas e tuplas são coleções desordenadas e são criados com chaves {}
 
 visitantes = {'Eduardo', 'Paulo', 'Marcos', 'Camila'}
 
-print(visitantes)
-#print(visitantes[0]) #erro, pois os conjuntos são desornados, diferente das listas e das tuplas. Mas porque são desordenados? print novamente...
+
+# print(visitantes)
+# print(visitantes[0]) #erro, pois os conjuntos são desornados, diferente das listas e das #tuplas. Mas porque são desordenados? print novamente...
 
 
 #Conjuntos não podem ter duplicatas, o que é util para os desenvolvedores, para garantir que os intens na coleção sejam únicos. Por exemplo em um app de uma mídia social amigos não podem ser duplicados. 
 
+# print(amigos)
+# print(len(amigos))
 
-amigos = {"Fernanda", 'Fabricio', 'Eduarda', 'Carla', 'Carla', 'Fernanda'}
-print(amigos)
-#print(len(amigos))
-
-estatus_do_carro = {'Audi', 'Q5', 2008, 4.0}
-print(estatus_do_carro)
+# estatus_do_carro = {'Audi', 'Q5', 2008, 4.0, True}
+# print(estatus_do_carro)
 
 #conjuntos são mutáveis, ou seja, podemos adicionar e remover itens, dele.  usando add() e remove()
-amigos.add('Roberto')
-amigos.remove('Eduarda')
+# amigos.add('Roberto')
+# amigos.remove('Eduarda')
+
+
 
 # amigos.remove('André')
 
 # amigos.append('André') # não funciona pois é desordenados
+
+"""
+
+amigos_conjuntos = {"Fernanda", 'Fabricio', 'Eduarda', 'Carla', 'Carla', 'Fernanda'}
+amigos_tupla = 'Eduardo', 25.8, 12, True
+amigo_lista = ['Eduardo', 'Paulo', 'Marcos', 'Camila']
+
+
+# print(type(amigos_conjuntos))
+# print(type(amigos_tupla))
+# print(type(amigo_lista))
+amigos = {"Fernanda", 'Fabricio', 'Eduarda', 'Carla', 'Carla', 'Fernanda'}
+
+amigos_lista = ['Carla', "Fernanda", 'Fabricio', 'Eduarda',  'Carla', 'Fernanda']
+
 amigos.clear()
 print(amigos) #retorna um set() vazio.
 
+print(amigos_lista.remove('Carla' )) #retorna um set() vazio.
+print(amigos_lista) #retorna um set() vazio.
 
-set1 ={"maçã", 'banana'}
-set2 ={"goiaba", 'banana'}
-combinar = set.union(set2)
+set1 ={"maça", 'banana', "goiaba"}
+set2 ={ 'banana', "maça"}
+
+combinar = set1.union(set2)
 
 
 print(combinar) #retorna um set() vazio.
 
-unico = set.difference(set2)
+unico = set1.difference(set2)
+print(unico) #retorna um set() vazio.
+
+
 
 # resumindo:
 
-        mutaveis    ordenadas     index  duplicadas
-Listas     ok         ok          ok       ok
+
+                   mutaveis    ordenadas     index    duplicadas
+Listas                ok          ok           ok          ok
 
                    
-Tuplas     não         ok           ok       ok
+Tuplas                não         ok           ok          ok
 
                    
-Sets        ok         não         não      não
+Sets/conjuntos        ok          não          não         não
+
 """
-
 
 
 
